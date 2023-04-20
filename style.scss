@@ -1,13 +1,12 @@
 @import"./variables";
 @import"./header";
-
+@import"./main";
 
 .conteiner {
     max-width: 1410px;
     width: 100%;
     margin: 0 auto;
 }
-
 .row {
     display: flex;
 }
@@ -17,91 +16,83 @@ body {
 [class*="col-"] {
     padding-left: 10px;
     padding-right: 10px;
-  }
-.col-13 {
+}
+.col-top-navbar-contact-info {
     @include col- (92%, 0 0 92%)
-    // max-width: 92%;
-    // flex: 0 0 92%;
 }
-.col-0_5 {
+.col-top-navbar-language {
     @include col- (5%, 0 0 5%)
-    // max-width: 5%;
-    // flex: 0 0 5%;
 }
-.col-7 {
+.col-bottom-navdar-menu {
     @include col- (50%, 0 0 50%)
-    // max-width: 50%;
-    // flex: 0 0 50%;
 }
-.col-4 {
+.col-logo {
     @include col- (30%, 0 0 30%)
-    // max-width: 30%;
-    // flex: 0 0 30%;
 }
-.col-2 {
+.col-bottom-navdar-btn {
     @include col- (15%, 0 0 15%)
-    // max-width: 15%;
-    // flex: 0 0 15%;
 }
 .btn {
     color: white;
+    border: 0;
+    border-radius: 5px;
     cursor: pointer;
-    @include font-nunito (700, 18px)
+    @include font-nunito (700, 18px, 24px)
 }
-.mob-col-2 {
+.mob-col-bottom-navdar-btn {
     display: none;
 }
 .mob-btn {
     display: none;
 }
-@media (max-width:375px) {
+.main {
+    background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
+}
+.col-main-content {
+    @include col- (38%, 0 0 38%);
+    margin-top: 130px;
+    margin-right: 90px;
+}
+.col-main-circle-frame-tag {
+    @include col- (23%, 0 0 23%);
+    position:relative
+}
+// [class*="mob-"] {
+//     display: none;
+//   }
+@media (max-width:1200px) {
     .conteiner {
-        max-width: 375px;
+        max-width: 1200px;
         width: 100%;
         margin: 0 auto;
     }
-    .col-13 {
+    .col-top-navbar-contact-info {
         @include col- (75%, 0 0 75%)
-        // max-width: 75%;
-        // flex: 0 0 75%;
     }
-    .col-0_5 {
+    .col-top-navbar-language {
         @include col- (25%, 0 0 5%)
-        // max-width: 25%;
-        // flex: 0 0 5%;
     }
-    .col-7 {
+    .col-bottom-navdar-menu {
         display: none;
     }
-    .logo {
-        display: none;
-    }
-    .mob-logo {
-        display: block;
-        margin: 10px;
-    }
-    .col-4 {
+    .col-logo {
         @include col- (60%, 0 0 60%)
-        // max-width: 60%;
-        // flex: 0 0 60%;
     }
-    .col-2 {
+    .col-bottom-navdar-btn {
         @include col- (14%, 0 0 14%)
-        // max-width: 14%;
-        // flex: 0 0 14%;
     }
-    .mob-col-2 {
+    .mob-col-bottom-navdar-btn {
         display: block;
         @include col- (10%, 0 0 10%)
-        // max-width: 10%;
-        // flex: 0 0 10%;
     }
     .mob-btn {
         display: block;
         color: white;
         cursor: pointer;
-        @include font-nunito (700, 18px)
+    }
+    .col-main-content {
+        @include col- (100%, 0 0 100%);
+        margin-top: 0;
+        margin-right: 0;
     }
 }
-// font-family: 'Nunito', sans-serif;
-// font-family: 'Poppins', sans-serif;

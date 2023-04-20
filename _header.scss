@@ -2,7 +2,7 @@
     background-color: #0c4b35;
     color: white;
     height: 60px;
-    @include font-poppins (400, 14px);
+    @include font-poppins (400, 14px, 25px);
     display: flex;
     align-items: center;
     .top-navbar-info {
@@ -15,23 +15,24 @@
         position: relative;
     }
     .icon-email {
-        @include icon ("images/icon-email.svg", 25px, 25px, -35px, -2px);
+        @include icon ("images/icon-email.svg", 25px, 25px, -35px, 0px);
     }
     .icon-phone-call {
-        @include icon ("images/icon-phone-call.svg", 25px, 25px, -35px, -2px);
+        @include icon ("images/icon-phone-call.svg", 25px, 25px, -35px, 0px);
     }
     .icon-location {
-        @include icon ("images/icon-location.svg", 25px, 25px, -35px, -2px);
+        @include icon ("images/icon-location.svg", 25px, 25px, -35px, 0px);
     }
     .top-navbar-language {
         position: relative;
         cursor: pointer;
     }
     .icon-down-arrow-white {
-        @include icon-arrow ("images/icon-down-arrow-white.svg", 7px, 12px, 7px, 8px);
+        @include icon-arrow ("images/icon-down-arrow-white.svg", 7px, 12px, 7px, 9px);
     }
     
 }
+
 .bottom-navdar {
     background-color: white;
     height: 85px;
@@ -51,13 +52,13 @@
         text-decoration: none;
         text-align: center;
         color: black;
-        @include font-nunito (700, 16px)
+        @include font-nunito (700, 16px, 20px)
     }
     .menu a:hover {
         color: #00730C;
     }
     .icon-down-arrow-company {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 4px, 8px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 3px, 5px);
     }
     .menu-dropdown:hover .icon-down-arrow-company {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -66,7 +67,7 @@
         position: absolute
     }
     .icon-down-arrow-services {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 9px, 8px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 7px, 5px);
     }
     .menu-dropdown:hover .icon-down-arrow-services {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -75,7 +76,7 @@
         position: absolute
     }
     .icon-down-arrow-project {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 12px, 8px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 12px, 5px);
     }
     .menu-dropdown:hover .icon-down-arrow-project {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -94,16 +95,24 @@
         margin-left: 35px;
         margin-top: 5px;
     }
+    .btn-call-us:hover {
+        @include btn-hover ();
+    }
     .icon-phone {
         @include icon ("images/icon-phone.svg", 30px, 30px, 25px, 8px);
     }
-
+    .btn-call-us:hover .icon-phone {
+        @include icon ("images/icon-phone-green.svg", 30px, 30px, 25px, 8px);
+    }
 }
 .mob-logo {
     display: none;
 }
- 
-@media (max-width:375px) {
+@media (max-width:1200px) {
+    .header {
+        position: relative;
+        z-index: 10;
+    }
         .top-navbar {
             height: 55px;
             font-size: 12px;
@@ -113,25 +122,36 @@
             .icon-down-arrow-white {
                 display: none;
             }
-            .mob-icon-down-arrow-white {
-                display: block;
-                @include icon-arrow ("mob-images/mob-icon-down-arrow-white.svg", 4px, 7px, -10px, 7px);
-            }
             .mob-icon-email {
                 display: block;
+                cursor: pointer;
                 @include icon ("mob-images/mob-icon-email.svg", 20px, 20px, 20px, 18px);
             }
             .mob-icon-phone-call {
                 display: block;
+                cursor: pointer;
                 @include icon ("mob-images/mob-icon-phone-call.svg", 20px, 20px, 60px, 18px);
             }
             .mob-icon-location {
                 display: block;
+                cursor: pointer;
                 @include icon ("mob-images/mob-icon-location.svg", 20px, 20px, 100px, 17px);
+            }
+            .mob-icon-down-arrow-white {
+                display: block;
+                @include icon-arrow ("mob-images/mob-icon-down-arrow-white.svg", 4px, 7px, -10px, 11px);
             }
         }
 
         .bottom-navdar {
+            height: 70px;
+            .logo {
+                display: none;
+            }
+            .mob-logo {
+                display: block;
+                margin: 10px;
+            }
             .btn-call-us {
                 display: none;
             }
@@ -146,10 +166,12 @@
                 cursor: pointer;
             }
             .mob-icon-phone {
+                display: block;
                 @include icon ("mob-images/mob-icon-phone.svg", 20px, 20px, 10px, 7px);
             }
-            .mob-icon-cancel {
-                background-image: url("mob-images/mob-icon-cancel.svg");
+            .mob-icon-menu {
+                display: block;
+                background-image: url("mob-images/mob-icon-menu.svg");
                 position: absolute;
                 background-repeat: no-repeat;
                 width: 30px;
@@ -157,6 +179,5 @@
                 margin: 10px 0;
                 cursor: pointer;
             }
-        }
-        
+        }    
 }

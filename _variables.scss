@@ -1,12 +1,14 @@
-@mixin font-poppins ($font-weight,$font-size) {
+@mixin font-poppins ($font-weight,$font-size,$line-height) {
     font-family: "Poppins", sans-serif;
     font-weight: $font-weight;
     font-size: $font-size;
+    line-height: $line-height;
 }
-@mixin font-nunito ($font-weight,$font-size) {
+@mixin font-nunito ($font-weight,$font-size,$line-height) {
     font-family: 'Nunito', sans-serif;
     font-weight: $font-weight;
     font-size: $font-size;
+    line-height: $line-height;
 }
 @mixin col- ($max-width, $flex) {
     max-width: $max-width;
@@ -30,3 +32,10 @@
     right:  $right;
     top: $top;
 }
+@mixin btn-hover () {
+    background-color: white;
+    color: #00730C;
+    border: 1px solid #00730C;
+}
+
+$main-grey-color: rgba(103, 103, 103, 1);
