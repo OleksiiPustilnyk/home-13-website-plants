@@ -1,6 +1,7 @@
 @import"./variables";
 @import"./header";
 @import"./main";
+@import"./main-second-page";
 
 .conteiner {
     max-width: 1410px;
@@ -12,6 +13,7 @@
 }
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 [class*="col-"] {
     padding-left: 10px;
@@ -45,7 +47,7 @@ body {
 .mob-btn {
     display: none;
 }
-.main {
+.main-first-page {
     background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 }
 .col-main-content {
@@ -79,7 +81,8 @@ body {
         @include col- (60%, 0 0 60%)
     }
     .col-bottom-navdar-btn {
-        @include col- (14%, 0 0 14%)
+        @include col- (26%, 0 0 26%);
+        display: flex;
     }
     .mob-col-bottom-navdar-btn {
         display: block;
@@ -88,7 +91,10 @@ body {
     .mob-btn {
         display: block;
         color: white;
+        border: 0;
+        border-radius: 5px;
         cursor: pointer;
+        @include font-nunito (700, 16px, 20px)
     }
     .col-main-content {
         @include col- (100%, 0 0 100%);

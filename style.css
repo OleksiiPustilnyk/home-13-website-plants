@@ -361,6 +361,7 @@
 
 .main-circle-frame-tag {
   display: flex;
+  margin-bottom: 100px;
 }
 
 .circle-frame {
@@ -396,8 +397,9 @@
 }
 
 .main-bg_img-girl-with-plants {
-  margin-top: 46px;
-  position: relative;
+  margin-top: 43px;
+  position: absolute;
+  right: -240px;
 }
 
 .mob-main-bg_img-girl-with-plants {
@@ -416,10 +418,11 @@
     display: block;
   }
   .mob-main-bg_img-girl-with-plants {
-    display: block;
+    display: flex;
     position: relative;
     top: -15px;
     left: -10px;
+    justify-content: center;
   }
   .main-sub-heading {
     margin-top: 48.5px;
@@ -537,6 +540,616 @@
     margin-right: 12px;
   }
 }
+.main-second-heading-and-paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+.main-second-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61.38px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-second-heading-green {
+  color: #00730C;
+}
+
+.main-second-paragraph {
+  max-width: 82%;
+  flex: 0 0 82%;
+  color: rgb(103, 103, 103);
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-second-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card-green {
+  width: 330px;
+  height: 336px;
+  margin-top: 30px;
+  background-color: #00730C;
+  border: 1px solid #00730C;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.card {
+  width: 330px;
+  height: 336px;
+  margin-top: 30px;
+  background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.card-icons {
+  display: block;
+}
+
+.card-text {
+  position: relative;
+  top: 179.5px;
+}
+
+.card-heading-white {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.74px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card-paragraph-white {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.card-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.74px;
+  margin-bottom: 10px;
+}
+
+.card-paragraph {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 44px;
+  margin-right: 44px;
+}
+
+.card-icon-bg-plant {
+  background-image: url("images/icon-bg-plant.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 145px;
+  width: 176px;
+  left: 77px;
+  top: 15.68px;
+}
+
+.card-icon-tree-planting {
+  background-image: url("images/icon-tree-planting.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-grass-cutting {
+  background-image: url("images/icon-grass-cutting.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-garden-desing {
+  background-image: url("images/icon-garden-desing.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-plant-growing {
+  background-image: url("images/icon-plant-growing.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-flower-scating {
+  background-image: url("images/icon-flower-scating.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-branch-cutting {
+  background-image: url("images/icon-branch-cutting.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-pests-weeds-control {
+  background-image: url("images/icon-pests-weeds-control.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card-icon-watering-and-irrigation {
+  background-image: url("images/icon-watering-and-irrigation.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.mob-main-second-cards {
+  display: none;
+}
+
+.main-second-page-content-with-button {
+  margin-top: 145px;
+  margin-left: 90px;
+}
+
+.main-second-bg-img-and-content {
+  display: flex;
+}
+
+.main-second-bg-images {
+  position: relative;
+  max-width: 47%;
+  flex: 0 0 47%;
+}
+
+.main-second-bg_img-green {
+  position: absolute;
+  top: 100px;
+}
+
+.main-second-bg_img-man-with-plant {
+  position: absolute;
+  top: 136px;
+  right: 24px;
+}
+
+.main-second-bg_img-plant {
+  position: absolute;
+  top: 699px;
+  right: -44px;
+}
+
+.main-second-page-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 61.38px;
+  margin-bottom: 30px;
+}
+
+.main-second-page-paragraph {
+  color: rgb(103, 103, 103);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.main-second-circle-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 65px;
+  justify-content: space-around;
+}
+
+.circle-card-and-name {
+  max-width: 45%;
+  flex: 0 0 45%;
+  display: flex;
+  margin-bottom: 60px;
+}
+
+.circle-card {
+  width: 67px;
+  height: 67px;
+  border-radius: 35px;
+  background-color: #00730C;
+  position: relative;
+}
+
+.circle-card-name {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.74px;
+  position: relative;
+  top: 17px;
+  left: 30px;
+}
+
+.icon-our-mission {
+  background-image: url("images/icon-our-mission.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  left: 8.5px;
+  top: 9px;
+}
+
+.icon-our-vision {
+  background-image: url("images/icon-our-vision.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  left: 8.5px;
+  top: 9px;
+}
+
+.icon-support-team {
+  background-image: url("images/icon-support-team.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  left: 8.5px;
+  top: 9px;
+}
+
+.icon-clients-trust {
+  background-image: url("images/icon-clients-trust.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 50px;
+  left: 8.5px;
+  top: 9px;
+}
+
+.btn-discover-more {
+  background-color: #00730C;
+  width: 192px;
+  height: 50px;
+  padding: 13px 35px 13px 35px;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+.btn-discover-more:hover {
+  background-color: white;
+  color: #00730C;
+  border: 1px solid #00730C;
+  border: 1px solid #00730C;
+}
+
+.mob-main-second-bg-img-and-content {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .main-second-heading-and-paragraph {
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+  .main-second-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38.19px;
+    margin-bottom: 15px;
+  }
+  .main-second-paragraph {
+    max-width: 92%;
+    flex: 0 0 92%;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .main-second-cards {
+    display: none;
+  }
+  .mob-main-second-cards {
+    display: flex;
+    justify-content: center;
+  }
+  .mob-card {
+    width: 345px;
+    height: 116px;
+    margin-top: 30px;
+    background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+  }
+  .mob-card-text {
+    padding-left: 90px;
+  }
+  .mob-card-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.82px;
+    margin-top: 20px;
+  }
+  .mob-card-paragraph {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 10px;
+  }
+  .mob-card-icon-bg-plant {
+    background-image: url("mob-images/mob-icon-bg-plant.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 92px;
+    width: 112px;
+    left: 0px;
+    top: 10px;
+  }
+  .mob-card-icon-tree-planting {
+    background-image: url("mob-images/mob-icon-tree-planting.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-grass-cutting {
+    background-image: url("mob-images/mob-icon-grass-cutting.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-garden-desing {
+    background-image: url("mob-images/mob-icon-garden-desing.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-plant-growing {
+    background-image: url("mob-images/mob-icon-plant-growing.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-flower-scaping {
+    background-image: url("mob-images/mob-icon-flower-scaping.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-branch-cutting {
+    background-image: url("mob-images/mob-icon-branch-cutting.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-pests-weeds-control {
+    background-image: url("mob-images/mob-icon-pests-weeds-control.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card-icon-watering-and-irrigation {
+    background-image: url("mob-images/mob-icon-watering-and-irrigation.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .main-second-bg-img-and-content {
+    display: none;
+  }
+  .mob-main-second-bg-img-and-content {
+    display: flex;
+    flex-direction: column;
+  }
+  .mob-main-second-bg-images {
+    position: relative;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .mob-main-second-bg_img-green {
+    position: absolute;
+    top: 50px;
+    left: 15px;
+  }
+  .mob-main-second-bg_img-man-with-plant {
+    position: absolute;
+    top: 62px;
+    right: 27px;
+  }
+  .mob-main-second-bg_img-plant {
+    position: absolute;
+    top: 350px;
+    right: 8px;
+  }
+  .main-second-page-content-with-button {
+    margin-top: 542px;
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-second-page-heading {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38.19px;
+    margin-bottom: 15px;
+  }
+  .main-second-page-paragraph {
+    color: rgb(103, 103, 103);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .main-second-circle-cards {
+    margin-top: 40px;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  .mob-circle-card-and-name {
+    background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+    border: 1px solid white;
+    border-radius: 10px;
+    max-width: 35%;
+    flex: 0 0 35%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  .mob-circle-card {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background-color: #00730C;
+    position: relative;
+  }
+  .mob-circle-card-name {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19.1px;
+  }
+  .mob-icon-our-mission {
+    background-image: url("mob-images/mob-icon-our-mission.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    top: 4px;
+  }
+  .mob-icon-our-vision {
+    background-image: url("mob-images/mob-icon-our-vision.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    top: 4px;
+  }
+  .mob-icon-support-team {
+    background-image: url("mob-images/mob-icon-support-team.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    top: 4px;
+  }
+  .mob-icon-clients-trust {
+    background-image: url("mob-images/mob-icon-clients-trust.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 30px;
+    left: 5px;
+    top: 4px;
+  }
+  .mob-btn-discover-more {
+    background-color: #00730C;
+    width: 167px;
+    height: 40px;
+    padding: 10px 30px 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+  .mob-btn-discover-more:hover {
+    background-color: white;
+    color: #00730C;
+    border: 1px solid #00730C;
+    border: 1px solid #00730C;
+  }
+}
 .conteiner {
   max-width: 1410px;
   width: 100%;
@@ -549,6 +1162,7 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
 
 [class*=col-] {
@@ -600,7 +1214,7 @@ body {
   display: none;
 }
 
-.main {
+.main-first-page {
   background: linear-gradient(79.58deg, rgba(0, 115, 12, 0.81) -39.14%, rgba(251, 246, 238, 0) 90.23%);
 }
 
@@ -639,8 +1253,9 @@ body {
     flex: 0 0 60%;
   }
   .col-bottom-navdar-btn {
-    max-width: 14%;
-    flex: 0 0 14%;
+    max-width: 26%;
+    flex: 0 0 26%;
+    display: flex;
   }
   .mob-col-bottom-navdar-btn {
     display: block;
@@ -650,7 +1265,13 @@ body {
   .mob-btn {
     display: block;
     color: white;
+    border: 0;
+    border-radius: 5px;
     cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
   }
   .col-main-content {
     max-width: 100%;
