@@ -1,0 +1,362 @@
+.main-second-heading-and-paragraph {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.main-second-heading {
+    @include font-nunito (800, 45px, 61.38px);
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main-second-heading-green {
+    color:#00730C;
+}
+.main-second-paragraph {
+    @include col- (82%, 0 0 82%);
+    color: rgba(103, 103, 103, 1);
+    @include font-nunito (400, 18px, 30px);
+    text-align: center;
+}
+.main-second-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card-green {
+    width: 330px;
+    height: 336px;
+    margin-top: 30px;
+    background-color: #00730C;
+    border: 1px solid #00730C;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.card {
+    width: 330px;
+    height: 336px;
+    margin-top: 30px;
+    background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+}
+.card-icons {
+    display: block
+}
+.card-text {
+    position: relative;
+    top: 179.5px
+}
+.card-heading-white {
+    @include font-nunito (700, 24px, 32.74px);
+    color: white;
+    margin-bottom: 10px;
+}
+.card-paragraph-white {
+    @include font-nunito (400, 16px, 28px);
+    color: white;
+    margin-left: 44px;
+    margin-right: 44px;
+}
+.card-heading {
+    @include font-nunito (700, 24px, 32.74px);
+    margin-bottom: 10px;
+}
+.card-paragraph {
+    @include font-nunito (400, 16px, 28px);
+    margin-left: 44px;
+    margin-right: 44px;
+}
+.card-icon-bg-plant {
+    @include icon ("images/icon-bg-plant.svg", 145px, 176px, 77px, 15.68px);
+}
+.card-icon-tree-planting {
+    @include icon ("images/icon-tree-planting.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-grass-cutting {
+    @include icon ("images/icon-grass-cutting.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-garden-desing {
+    @include icon ("images/icon-garden-desing.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-plant-growing {
+    @include icon ("images/icon-plant-growing.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-flower-scating {
+    @include icon ("images/icon-flower-scating.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-branch-cutting {
+    @include icon ("images/icon-branch-cutting.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-pests-weeds-control {
+    @include icon ("images/icon-pests-weeds-control.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card-icon-watering-and-irrigation {
+    @include icon ("images/icon-watering-and-irrigation.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.mob-main-second-cards {
+    display: none;
+}
+.main-second-page-content-with-button {
+    margin-top: 145px;
+    margin-left: 90px;
+}
+.main-second-bg-img-and-content {
+    display: flex;
+}
+.main-second-bg-images {
+    position: relative;
+    @include col- (47%, 0 0 47%);
+}
+.main-second-bg_img-green {
+    position: absolute;
+    top: 100px;
+}
+.main-second-bg_img-man-with-plant {
+    position: absolute;
+    top: 136px;
+    right: 24px;
+}
+.main-second-bg_img-plant {
+    position: absolute;
+    top: 699px;
+    right: -44px;
+}
+// .main-second-content-heading-paragraph {
+
+// }
+.main-second-page-heading {
+    @include font-nunito (800, 45px, 61.38px);
+    margin-bottom: 30px;
+}
+.main-second-page-paragraph {
+    color: rgba(103, 103, 103, 1);
+    @include font-poppins (400, 16px, 28px);
+    margin-bottom: 20px;
+}
+.main-second-circle-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+    justify-content: space-around
+}
+.circle-card-and-name {
+    @include col- (45%, 0 0 45%);
+    display: flex;
+    // justify-content: space-evenly;
+    margin-bottom: 60px;
+}
+.circle-card {
+    width: 67px;
+    height: 67px;
+    border-radius: 35px;
+    background-color: #00730C;
+    position: relative;
+}
+.circle-card-name {
+    @include font-nunito (700, 24px, 32.74px);
+    position: relative;
+    top: 17px;
+    left: 30px;
+}
+.icon-our-mission {
+    @include icon ("images/icon-our-mission.svg", 50px, 50px, 8.5px, 9px);
+}
+.icon-our-vision {
+    @include icon ("images/icon-our-vision.svg", 50px, 50px, 8.5px, 9px);
+}
+.icon-support-team {
+    @include icon ("images/icon-support-team.svg", 50px, 50px, 8.5px, 9px);
+}
+.icon-clients-trust {
+    @include icon ("images/icon-clients-trust.svg", 50px, 50px, 8.5px, 9px);
+}
+.btn-discover-more {
+    background-color: #00730C;
+    width: 192px;
+    height: 50px;
+    padding: 13px 35px 13px 35px;
+    margin-top: 25px;
+    margin-bottom: 100px;    
+}
+.btn-discover-more:hover {
+    @include btn-hover ();
+    border: 1px solid #00730C;
+}
+.mob-main-second-bg-img-and-content {
+    display: none;
+}
+@media (max-width:1200px) {
+    .main-second-heading-and-paragraph {
+        margin-top: 50px;
+        margin-bottom: 30px
+    }
+    .main-second-heading {
+        @include font-nunito (700, 28px, 38.19px);
+        margin-bottom: 15px;
+    }
+    .main-second-paragraph {
+        @include col- (92%, 0 0 92%);
+        @include font-nunito (400, 14px, 22px);
+    }
+    .main-second-cards {
+        display: none;
+    }
+    .mob-main-second-cards {
+        display: flex;
+        justify-content: center;
+    }
+    .mob-card {
+        width: 345px;
+        height: 116px;
+        margin-top: 30px;
+        background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+        box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+        border: 1px solid white;
+        border-radius: 10px;
+        // text-align: center;
+        position: relative;
+    }
+    .mob-card-text {
+        // @include col- (68%, 0 0 68%);
+        padding-left: 90px;
+    }
+    .mob-card-heading {
+        @include font-nunito (700, 16px, 21.82px);
+        margin-top: 20px;
+    }
+    .mob-card-paragraph {
+        @include font-nunito (400, 14px, 22px);
+        margin-top: 10px;
+    }
+    .mob-card-icon-bg-plant {
+        @include icon ("mob-images/mob-icon-bg-plant.svg", 92px, 112px, 0px, 10px);
+    }
+    .mob-card-icon-tree-planting {
+        @include icon ("mob-images/mob-icon-tree-planting.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-grass-cutting {
+        @include icon ("mob-images/mob-icon-grass-cutting.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-garden-desing {
+        @include icon ("mob-images/mob-icon-garden-desing.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-plant-growing {
+        @include icon ("mob-images/mob-icon-plant-growing.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-flower-scaping {
+        @include icon ("mob-images/mob-icon-flower-scaping.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-branch-cutting {
+        @include icon ("mob-images/mob-icon-branch-cutting.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-pests-weeds-control {
+        @include icon ("mob-images/mob-icon-pests-weeds-control.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card-icon-watering-and-irrigation {
+        @include icon ("mob-images/mob-icon-watering-and-irrigation.svg", 50px, 50px, 20px, 33px);
+    }
+    .main-second-bg-img-and-content {
+        display: none;
+    }
+    .mob-main-second-bg-img-and-content {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .mob-main-second-bg-images {
+        
+        position: relative;
+        @include col- (100%, 0 0 100%);
+    }
+    .mob-main-second-bg_img-green {
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
+    .mob-main-second-bg_img-man-with-plant {
+        position: absolute;
+        top: 62px;
+        right: 27px;
+    }
+    .mob-main-second-bg_img-plant {
+        position: absolute;
+        top: 350px;
+        right: 8px;
+    }
+    .main-second-page-content-with-button {
+        margin-top: 542px;
+        margin-left: 15px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-second-page-heading {
+        @include font-nunito (700, 28px, 38.19px);
+        margin-bottom: 15px;
+    }
+    .main-second-page-paragraph {
+        color: rgba(103, 103, 103, 1);
+        @include font-poppins (400, 14px, 22px);
+        margin-bottom: 20px;
+    }
+    .main-second-circle-cards {
+        margin-top: 40px;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    .mob-circle-card-and-name {
+        background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+        box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+        border: 1px solid white;
+        border-radius: 10px;
+        @include col- (35%, 0 0 35%);
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+    .mob-circle-card {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+        border-radius: 20px;
+        background-color: #00730C;
+        position: relative;
+    }
+    .mob-circle-card-name {
+        @include font-nunito (700, 14px, 19.1px);
+    }
+    .mob-icon-our-mission {
+        @include icon ("mob-images/mob-icon-our-mission.svg", 30px, 30px, 5px, 4px);
+    }
+    .mob-icon-our-vision {
+        @include icon ("mob-images/mob-icon-our-vision.svg", 30px, 30px, 5px, 4px);
+    }
+    .mob-icon-support-team {
+        @include icon ("mob-images/mob-icon-support-team.svg", 30px, 30px, 5px, 4px);
+    }
+    .mob-icon-clients-trust {
+        @include icon ("mob-images/mob-icon-clients-trust.svg", 30px, 30px, 5px, 4px);
+    }
+    .mob-btn-discover-more {
+        background-color: #00730C;
+        width: 167px;
+        height: 40px;
+        padding: 10px 30px 10px 30px;
+        margin-top: 10px;
+        margin-bottom: 50px;    
+    }
+    .mob-btn-discover-more:hover {
+        @include btn-hover ();
+        border: 1px solid #00730C;
+    }
+}

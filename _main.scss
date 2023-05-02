@@ -47,6 +47,7 @@
 }
 .main-circle-frame-tag {
     display: flex;
+    margin-bottom: 100px;
 }
 .circle-frame {
     width: 50px;
@@ -72,8 +73,9 @@
     right: 0px;
 }
 .main-bg_img-girl-with-plants {
-    margin-top: 46px;
-    position: relative;
+    margin-top: 43px;
+    position: absolute;
+    right: -240px;
 }
 .mob-main-bg_img-girl-with-plants {
     display: none;
@@ -89,10 +91,11 @@
         display: block;
     }
     .mob-main-bg_img-girl-with-plants {
-        display: block;
+        display: flex;
         position: relative;
         top: -15px;
         left: -10px;
+        justify-content: center;
     }
     .main-sub-heading {
         margin-top: 48.5px;
