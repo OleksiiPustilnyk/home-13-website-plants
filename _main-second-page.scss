@@ -192,6 +192,85 @@
 .mob-main-second-bg-img-and-content {
     display: none;
 }
+.main-second-page-why-chosse-us {
+    background-color: #0c4b35;
+    color: white;
+    height: 659px;
+    position: relative;
+}
+// .main-second-bg_img-ferm-leaf-left {
+//     position: absolute;
+//     width: 320px;
+//     height: 613px;
+//     left: 0;
+//     // top: 313.97px;
+//     opacity: 0.5;
+//     // transform: rotate(120deg);
+// }
+// .main-second-bg_img-ferm-leaf-right {
+//     position: absolute;
+//     width: 597.36px;
+//     height: 590.88px;
+//     // left: 2360.76px;
+//     // top: -11.95px;
+
+
+//     opacity: 0.5;
+//     // transform: rotate(113.34deg);
+// }
+.why-chosse-us-content-with-button {
+    @include col- (47%, 0 0 47%);
+}
+.why-chosse-us-heading-paragraph {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.why-chosse-us-heading {
+    @include font-nunito (700, 45px, 61.38px);
+    margin-bottom: 30px;
+}
+.why-chosse-us-paragraph {
+    @include font-nunito (400, 18px, 30px)
+}
+.why-chosse-us-check-circle {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    justify-content: space-around
+}
+.check-and-name {
+    @include col- (45%, 0 0 45%);
+    display: flex;
+    margin-bottom: 20px;
+}
+.check-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 35px;
+    background-color: white;
+    position: relative;
+}
+.check-name {
+    @include font-nunito (700, 24px, 32.74px);
+    position: relative;
+    left: 30px;
+}
+.icon-check {
+    @include icon ("images/icon-check.svg", 14.69px, 20px, 5px, 8px);
+}
+.why-chosse-us-bg-images {
+    position: relative;
+    @include col- (53%, 0 0 53%);
+    display: flex;
+    justify-content: center;
+}
+.why-chosse-us-img-girl-with-scissors {
+    position: absolute;
+    top: 114.5px;
+}
+.mob-why-chosse-us {
+    display: none;
+}
 @media (max-width:1200px) {
     .main-second-heading-and-paragraph {
         margin-top: 50px;
@@ -349,7 +428,7 @@
     }
     .mob-btn-discover-more {
         background-color: #00730C;
-        width: 167px;
+        width: 168px;
         height: 40px;
         padding: 10px 30px 10px 30px;
         margin-top: 10px;
@@ -358,5 +437,90 @@
     .mob-btn-discover-more:hover {
         @include btn-hover ();
         border: 1px solid #00730C;
+    }
+    .why-chosse-us-bg-images {
+        display: none;
+    }
+    .why-chosse-us-img-girl-with-scissors {
+        display: none;
+    }
+    .why-chosse-us-content-with-button {
+        display: none;
+    }
+    .mob-why-chosse-us {
+        display: flex;
+        position: relative;
+        justify-content: space-evenly;
+    }
+    .mob-why-chosse-us-img-girl-with-scissors {
+        position: absolute;
+        margin-top: 50px
+    }
+    .why-chosse-us-content-with-button {
+        @include col- (90%, 0 0 90%);
+        // display: flex;
+    }
+    .why-chosse-us-heading-paragraph {
+        margin-left: 15px;
+        margin-right: 15px
+    }
+    .why-chosse-us-heading {
+        @include font-nunito (700, 28px, 38.19px);
+        margin-top: 190px;
+        margin-bottom: 15px;
+        text-align: center
+    }
+    .why-chosse-us-paragraph {
+        @include font-nunito (400, 14px, 22px);
+        text-align: center;
+    }
+    .why-chosse-us-check-circle {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 5px;
+        justify-content: space-around
+    }
+    .check-and-name {
+        @include col- (45%, 0 0 45%);
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .check-circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 35px;
+        background-color: white;
+        position: relative;
+    }
+    .check-name {
+        @include font-nunito (700, 16px, 21.82px);
+        position: relative;
+        left: 10px;
+    }
+    .icon-check {
+        @include icon ("mob-images/mob-icon-check.svg", 9.79px, 13.33px, 3px, 5px);
+    }
+    // .why-chosse-us-bg-images {
+    //     position: relative;
+    //     @include col- (53%, 0 0 53%);
+    //     display: flex;
+    //     justify-content: center;
+    // }
+    // .mob-why-chosse-us-bg-images {
+    //     display: block;
+    // }
+    .mob-why-chosse-us-img-fern-leaf-left {
+        position: absolute;
+        left: 0px;
+        top: 80px;
+    }
+    .mob-why-chosse-us-img-fern-leaf-right {
+        position: absolute;
+        right: 0px;
+    }
+    .mob-why-chosse-us-content-with-button {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
