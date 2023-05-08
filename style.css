@@ -49,8 +49,20 @@
   position: relative;
   cursor: pointer;
 }
-.top-navbar .top-navbar-language .icon-down-arrow-white {
+.top-navbar .top-navbar-language:hover {
+  color: #00730C;
+}
+.top-navbar .icon-down-arrow-white {
   background-image: url("images/icon-down-arrow-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 7px;
+  width: 12px;
+  right: 7px;
+  top: 9px;
+}
+.top-navbar .top-navbar-language:hover .icon-down-arrow-white {
+  background-image: url("images/icon-down-arrow-green.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 7px;
@@ -226,6 +238,16 @@
   .top-navbar .mob-icon-down-arrow-white {
     display: block;
     background-image: url("mob-images/mob-icon-down-arrow-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 4px;
+    width: 7px;
+    right: -10px;
+    top: 11px;
+  }
+  .top-navbar .top-navbar-language:hover .mob-icon-down-arrow-white {
+    display: block;
+    background-image: url("mob-images/mob-icon-down-arrow-green.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 4px;
