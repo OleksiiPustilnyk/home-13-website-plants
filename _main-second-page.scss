@@ -432,7 +432,8 @@
         height: 40px;
         padding: 10px 30px 10px 30px;
         margin-top: 10px;
-        margin-bottom: 50px;    
+        margin-bottom: 50px;
+        @include font-nunito (700, 16px, 20px)    
     }
     .mob-btn-discover-more:hover {
         @include btn-hover ();
