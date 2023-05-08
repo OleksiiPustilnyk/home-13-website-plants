@@ -132,7 +132,8 @@
 .bottom-navdar .icon-down-arrow-project::after {
   position: absolute;
 }
-.bottom-navdar .btn-call-us {
+
+.btn-call-us {
   background-color: #00730C;
   width: 170px;
   height: 50px;
@@ -143,12 +144,14 @@
   margin-left: 35px;
   margin-top: 5px;
 }
-.bottom-navdar .btn-call-us:hover {
+
+.btn-call-us:hover {
   background-color: white;
   color: #00730C;
   border: 1px solid #00730C;
 }
-.bottom-navdar .icon-phone {
+
+.icon-phone {
   background-image: url("images/icon-phone.svg");
   position: absolute;
   background-repeat: no-repeat;
@@ -157,7 +160,8 @@
   left: 25px;
   top: 8px;
 }
-.bottom-navdar .btn-call-us:hover .icon-phone {
+
+.btn-call-us:hover .icon-phone {
   background-image: url("images/icon-phone-green.svg");
   position: absolute;
   background-repeat: no-repeat;
@@ -242,7 +246,7 @@
   .bottom-navdar .btn-call-us {
     display: none;
   }
-  .bottom-navdar .mob-btn-call-us {
+  .bottom-navdar .mob-btn-mini-call-us {
     background-color: #00730C;
     width: 40px;
     height: 34px;
@@ -1232,6 +1236,10 @@
     padding: 10px 30px 10px 30px;
     margin-top: 10px;
     margin-bottom: 50px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
   }
   .mob-btn-discover-more:hover {
     background-color: white;
@@ -1330,6 +1338,282 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+}
+.card-third-page-green {
+  width: 330px;
+  height: 406px;
+  margin-top: 30px;
+  background-color: #00730C;
+  border: 1px solid #00730C;
+  border-radius: 10px;
+  position: relative;
+}
+
+.card-number-green {
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 78px;
+  line-height: 106.39px;
+  color: white;
+  right: 30px;
+  top: 50px;
+}
+
+.card-third-page-text {
+  position: relative;
+  top: 165px;
+}
+
+.card-third-page-heading-white {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.74px;
+  color: white;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.card-third-page-paragraph-white {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  margin-left: 30px;
+}
+
+.card-third-page {
+  width: 330px;
+  height: 406px;
+  margin-top: 30px;
+  background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+  box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+  border: 1px solid white;
+  position: relative;
+}
+
+.card-number {
+  position: absolute;
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 78px;
+  line-height: 106.39px;
+  color: #E3E3E3;
+  right: 30px;
+  top: 50px;
+}
+
+.card-third-page-heading {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32.74px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.card-third-page-paragraph {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  margin-left: 30px;
+}
+
+.card-icon-bg-plant-2-white {
+  background-image: url("images/icon-bg-plant-2-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 161.8px;
+  width: 95.1px;
+  left: 190.85px;
+  top: 112.98px;
+  opacity: 10%;
+}
+
+.card-icon-consultation {
+  background-image: url("images/icon-consultation.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.card-icon-bg-plant-2 {
+  background-image: url("images/icon-bg-plant-2.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 161.8px;
+  width: 95.1px;
+  left: 190.85px;
+  top: 112.98px;
+  opacity: 10%;
+}
+
+.card-icon-design-and-work {
+  background-image: url("images/icon-design-and-work.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.card-icon-maintenance {
+  background-image: url("images/icon-maintenance.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.card-icon-complete {
+  background-image: url("images/icon-complete.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.main-third-page-img-paragraph-and-btn {
+  margin-top: 100px;
+  position: relative;
+}
+
+.main-third-page-paragraph-and-btn {
+  position: absolute;
+  left: 647px;
+  top: 78.5px;
+}
+
+.main-third-page-paragraph-on-the-img {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+  font-size: 33px;
+  line-height: 45.01px;
+  width: 448px;
+  height: 90px;
+  color: white;
+}
+
+.main-third-page-btn {
+  position: absolute;
+  right: -255px;
+  top: 15px;
+}
+
+.mob-main-third-page-img-paragraph-and-btn {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .main-third-page-img-paragraph-and-btn {
+    display: none;
+  }
+  .mob-card-third-page {
+    width: 345px;
+    height: 208px;
+    margin-top: 30px;
+    background: linear-gradient(172.29deg, #FFFFFF -10.79%, #FFFFFF 94.04%);
+    box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+  }
+  .mob-card-number {
+    position: absolute;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+    font-size: 45px;
+    line-height: 61.38px;
+    color: #E3E3E3;
+    right: 30px;
+    top: 15px;
+  }
+  .mob-card-third-page-text {
+    margin-top: 90px;
+    margin-left: 20px;
+  }
+  .mob-card-icon-bg-plant-2 {
+    background-image: url("mob-images/mob-icon-bg-plant-2.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 111.89px;
+    width: 65.77px;
+    left: 237.83px;
+    top: 47.97px;
+  }
+  .mob-card-icon-consultation {
+    background-image: url("mob-images/mob-icon-consultation.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-card-icon-design-and-work {
+    background-image: url("mob-images/mob-icon-design-and-work.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-card-icon-maintenance {
+    background-image: url("mob-images/mob-icon-maintenance.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-card-icon-complete {
+    background-image: url("mob-images/mob-icon-complete.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-main-third-page-img-paragraph-and-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    position: relative;
+  }
+  .main-third-page-paragraph-and-btn {
+    position: absolute;
+    left: 56px;
+    top: 50px;
+  }
+  .main-third-page-paragraph-on-the-img {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27.28px;
+    width: 272px;
+    height: 54px;
+    color: white;
+    text-align: center;
+  }
+  .main-third-page-btn {
+    position: absolute;
+    right: 114.5px;
+    top: 134px;
   }
 }
 .conteiner {
@@ -1450,10 +1734,6 @@ body {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
   }
   .col-main-content {
     max-width: 100%;

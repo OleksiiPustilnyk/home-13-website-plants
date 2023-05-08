@@ -83,27 +83,27 @@
     }
     .icon-down-arrow-project::after {
         position: absolute
-    }
-    .btn-call-us {
-        background-color: #00730C;
-        width: 170px;
-        height: 50px;
-        border: 0;
-        border-radius: 5px;
-        padding: 10px 15px 10px 35px;
-        position: relative;
-        margin-left: 35px;
-        margin-top: 5px;
-    }
-    .btn-call-us:hover {
-        @include btn-hover ();
-    }
-    .icon-phone {
-        @include icon ("images/icon-phone.svg", 30px, 30px, 25px, 8px);
-    }
-    .btn-call-us:hover .icon-phone {
-        @include icon ("images/icon-phone-green.svg", 30px, 30px, 25px, 8px);
-    }
+    } 
+}
+.btn-call-us {
+    background-color: #00730C;
+    width: 170px;
+    height: 50px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px 15px 10px 35px;
+    position: relative;
+    margin-left: 35px;
+    margin-top: 5px;
+}
+.btn-call-us:hover {
+    @include btn-hover ();
+}
+.icon-phone {
+    @include icon ("images/icon-phone.svg", 30px, 30px, 25px, 8px);
+}
+.btn-call-us:hover .icon-phone {
+    @include icon ("images/icon-phone-green.svg", 30px, 30px, 25px, 8px);
 }
 .mob-logo {
     display: none;
@@ -155,7 +155,7 @@
             .btn-call-us {
                 display: none;
             }
-            .mob-btn-call-us {
+            .mob-btn-mini-call-us {
                 background-color: #00730C;
                 width: 40px;
                 height: 34px;
