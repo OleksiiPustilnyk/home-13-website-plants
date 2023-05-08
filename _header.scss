@@ -27,6 +27,7 @@
         position: relative;
         cursor: pointer;
     }
+    .top-navbar-language
     .icon-down-arrow-white {
         @include icon-arrow ("images/icon-down-arrow-white.svg", 7px, 12px, 7px, 9px);
     }
@@ -58,7 +59,7 @@
         color: #00730C;
     }
     .icon-down-arrow-company {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 3px, 5px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 3px, 7px);
     }
     .menu-dropdown:hover .icon-down-arrow-company {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -67,7 +68,7 @@
         position: absolute
     }
     .icon-down-arrow-services {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 7px, 5px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 7px, 7px);
     }
     .menu-dropdown:hover .icon-down-arrow-services {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -76,7 +77,7 @@
         position: absolute
     }
     .icon-down-arrow-project {
-        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 12px, 5px);
+        @include icon-arrow ("images/icon-down-arrow-black.svg", 7px, 12px, 12px, 7px);
     }
     .menu-dropdown:hover .icon-down-arrow-project {
         background-image: url(images/icon-down-arrow-green.svg)
@@ -165,12 +166,20 @@
                 margin: 10px;
                 cursor: pointer;
             }
+            .mob-btn-mini-call-us:hover {
+                background-color: white;
+                border: 1px solid #00730C;
+            }
             .mob-icon-phone {
-                display: block;
+                // display: block;
                 @include icon ("mob-images/mob-icon-phone.svg", 20px, 20px, 10px, 7px);
             }
+            .mob-btn-mini-call-us:hover .mob-icon-phone {
+                // display: block;
+                @include icon ("mob-images/mob-icon-phone-green.svg", 20px, 20px, 10px, 7px);
+            }
             .mob-icon-menu {
-                display: block;
+                // display: block;
                 background-image: url("mob-images/mob-icon-menu.svg");
                 position: absolute;
                 background-repeat: no-repeat;

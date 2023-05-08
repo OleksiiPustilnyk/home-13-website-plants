@@ -1,36 +1,36 @@
-.card-third-page-green {
-    width: 330px;
-    height: 406px;
-    margin-top: 30px;
-    background-color: #00730C;
-    border: 1px solid #00730C;
-    border-radius: 10px;
-    // text-align: center;
-    position: relative;
-}
-.card-number-green {
-    position: absolute;
-    @include font-nunito (800, 78px, 106.39px);
-    color: white;
-    right: 30px;
-    top: 50px;
-}
+// .card-third-page-green {
+//     width: 330px;
+//     height: 406px;
+//     margin-top: 30px;
+//     background-color: #00730C;
+//     border: 1px solid #00730C;
+//     border-radius: 10px;
+//     // text-align: center;
+//     position: relative;
+// }
+// .card-number-green {
+//     position: absolute;
+//     @include font-nunito (800, 78px, 106.39px);
+//     color: white;
+//     right: 30px;
+//     top: 50px;
+// }
 .card-third-page-text {
     position: relative;
     top: 165px
 }
-.card-third-page-heading-white {
-    @include font-nunito (700, 24px, 32.74px);
-    color: white;
-    margin-bottom: 20px;
-    margin-left: 30px;
-}
-.card-third-page-paragraph-white {
-    @include font-nunito (400, 16px, 28px);
-    color: white;
-    margin-left: 30px;
-    // margin-right: 44px;
-}
+// .card-third-page-heading-white {
+//     @include font-nunito (700, 24px, 32.74px);
+//     color: white;
+//     margin-bottom: 20px;
+//     margin-left: 30px;
+// }
+// .card-third-page-paragraph-white {
+//     @include font-nunito (400, 16px, 28px);
+//     color: white;
+//     margin-left: 30px;
+//     // margin-right: 44px;
+// }
 .card-third-page {
     width: 330px;
     height: 406px;
@@ -41,6 +41,7 @@
     // border-radius: 10px;
     // text-align: center;
     position: relative;
+    cursor: pointer;
 }
 .card-number {
     position: absolute;
@@ -59,25 +60,41 @@
     margin-left: 30px;
     // margin-right: 44px;
 }
-.card-icon-bg-plant-2-white {
+.card-third-page:hover {
+    background: #00730C;
+    color: white;
+}
+.card-icon-bg-plant-2 {
+    @include icon ("images/icon-bg-plant-2.svg", 161.8px, 95.1px, 190.85px, 112.98px);
+    opacity: 10%;
+}
+.card-third-page:hover .card-icon-bg-plant-2 {
     @include icon ("images/icon-bg-plant-2-white.svg", 161.8px, 95.1px, 190.85px, 112.98px);
     opacity: 10%;
 }
 .card-icon-consultation {
     @include icon ("images/icon-consultation.svg", 70px, 70px, 29px, 55px);
 }
-.card-icon-bg-plant-2 {
-    @include icon ("images/icon-bg-plant-2.svg", 161.8px, 95.1px, 190.85px, 112.98px);
-    opacity: 10%;
+.card-third-page:hover .card-icon-consultation {
+    @include icon ("images/icon-consultation-white.svg", 70px, 70px, 29px, 55px);
 }
 .card-icon-design-and-work {
     @include icon ("images/icon-design-and-work.svg", 70px, 70px, 29px, 55px);
 }
+.card-third-page:hover .card-icon-design-and-work {
+    @include icon ("images/icon-design-and-work-white.svg", 70px, 70px, 29px, 55px);
+}
 .card-icon-maintenance {
     @include icon ("images/icon-maintenance.svg", 70px, 70px, 29px, 55px);
 }
+.card-third-page:hover .card-icon-maintenance {
+    @include icon ("images/icon-maintenance-white.svg", 70px, 70px, 29px, 55px);
+}
 .card-icon-complete {
     @include icon ("images/icon-complete.svg", 70px, 70px, 29px, 55px);
+}
+.card-third-page:hover .card-icon-complete {
+    @include icon ("images/icon-complete-white.svg", 70px, 70px, 29px, 55px);
 }
 .main-third-page-img-paragraph-and-btn {
     margin-top: 100px;
@@ -116,6 +133,7 @@
         border-radius: 10px;
         // text-align: center;
         position: relative;
+        cursor: pointer;
     }
     .mob-card-number {
         position: absolute;
@@ -128,31 +146,54 @@
         margin-top: 90px;
         margin-left: 20px;
     }
+    .mob-card-third-page:hover {
+        background: #00730C;
+        color: white;
+    }
     .mob-card-icon-bg-plant-2 {
         @include icon ("mob-images/mob-icon-bg-plant-2.svg", 111.89px, 65.77px, 237.83px, 47.97px);
+        // opacity: 50%;
+    }
+    .mob-card-third-page:hover .mob-card-icon-bg-plant-2 {
+        @include icon ("mob-images/mob-icon-bg-plant-2-white.svg", 111.89px, 65.77px, 237.83px, 47.97px);
         // opacity: 50%;
     }
     .mob-card-icon-consultation {
         @include icon ("mob-images/mob-icon-consultation.svg", 50px, 50px, 20px, 20px);
     }
+    .mob-card-third-page:hover .mob-card-icon-consultation {
+        @include icon ("mob-images/mob-icon-consultation-white.svg", 50px, 50px, 20px, 20px);
+    }
     .mob-card-icon-design-and-work {
         @include icon ("mob-images/mob-icon-design-and-work.svg", 50px, 50px, 20px, 20px);
+    }
+    .mob-card-third-page:hover .mob-card-icon-design-and-work {
+        @include icon ("mob-images/mob-icon-design-and-work-white.svg", 50px, 50px, 20px, 20px);
     }
     .mob-card-icon-maintenance {
         @include icon ("mob-images/mob-icon-maintenance.svg", 50px, 50px, 20px, 20px);
     }
+    .mob-card-third-page:hover .mob-card-icon-maintenance {
+        @include icon ("mob-images/mob-icon-maintenance-white.svg", 50px, 50px, 20px, 20px);
+    }
     .mob-card-icon-complete {
         @include icon ("mob-images/mob-icon-complete.svg", 50px, 50px, 20px, 20px);
+    }
+    .mob-card-third-page:hover .mob-card-icon-complete {
+        @include icon ("mob-images/mob-icon-complete-white.svg", 50px, 50px, 20px, 20px);
     }
     .mob-main-third-page-img-paragraph-and-btn {
         display: flex;
         justify-content: center;
         margin-top: 55px;
+        
+    }
+    .mob-main-third-page-img {
         position: relative;
     }
     .main-third-page-paragraph-and-btn {
         position: absolute;
-        left: 56px;
+        left: 41px;
         top: 50px;
     }
     .main-third-page-paragraph-on-the-img {
@@ -164,35 +205,42 @@
     }
     .main-third-page-btn {
         position: absolute;
-        right: 114.5px;
-        top: 544px;
+        right: 67.5px;
+        top: 84px;
     }
+    // .mob-btn-call-us {
+    //     background-color: #00730C;
+    //     width: 137px;
+    //     height: 40px;
+    //     padding: 10px 0px 10px 0px;
+    //     margin-top: 10px;
+    //     margin-bottom: 50px;
+    //     @include font-nunito (700, 14px, 19.1px)    
+    // }
+    // .mob-btn-call-us:hover {
+    //     @include btn-hover ();
+    //     border: 1px solid #00730C;
+    // }
     .mob-btn-call-us {
         background-color: #00730C;
         width: 137px;
         height: 40px;
-        padding: 10px 0px 10px 0px;
-        margin-top: 10px;
-        margin-bottom: 50px;
-        @include font-nunito (700, 14px, 19.1px)    
+        border: 0;
+        // border-radius: 5px;
+        padding: 10px 0px 10px 20px;
+        position: relative;
+        // margin-left: 35px;
+        // margin-top: 5px;
     }
     .mob-btn-call-us:hover {
         @include btn-hover ();
-        border: 1px solid #00730C;
     }
-    // .mob-btn-call-us {
-    //     // display: block;
-    //     background-color: #00730C;
-    //     width: 137px;
-    //     height: 40px;
-    //     border: 0;
-    //     border-radius: 10px;
-    //     position: relative;
-    //     // margin: 10px;
-    //     cursor: pointer;
-    // }
     .mob-icon-phone {
-        display: block;
-        @include icon ("mob-images/mob-icon-phone.svg", 20px, 20px, 10px, 7px);
+        // display: block;
+        @include icon ("mob-images/mob-icon-phone.svg", 20px, 20px, 25px, 10px);
+    }
+    .mob-btn-call-us:hover .mob-icon-phone {
+        // display: block;
+        @include icon ("mob-images/mob-icon-phone-green.svg", 20px, 20px, 25px, 10px);
     }
 }

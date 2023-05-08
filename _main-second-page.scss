@@ -25,16 +25,16 @@
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.card-green {
-    width: 330px;
-    height: 336px;
-    margin-top: 30px;
-    background-color: #00730C;
-    border: 1px solid #00730C;
-    border-radius: 10px;
-    text-align: center;
-    position: relative;
-}
+// .card-green {
+//     width: 330px;
+//     height: 336px;
+//     margin-top: 30px;
+//     background-color: #00730C;
+//     border: 1px solid #00730C;
+//     border-radius: 10px;
+//     text-align: center;
+//     position: relative;
+// }
 .card {
     width: 330px;
     height: 336px;
@@ -45,6 +45,7 @@
     border-radius: 10px;
     text-align: center;
     position: relative;
+    cursor: pointer;
 }
 .card-icons {
     display: block
@@ -73,32 +74,60 @@
     margin-left: 44px;
     margin-right: 44px;
 }
+.card:hover {
+    background: #00730C;
+    color: white;
+}
 .card-icon-bg-plant {
     @include icon ("images/icon-bg-plant.svg", 145px, 176px, 77px, 15.68px);
 }
 .card-icon-tree-planting {
     @include icon ("images/icon-tree-planting.svg", 70px, 70px, 130.5px, 59.5px);
 }
+.card:hover .card-icon-tree-planting {
+    @include icon ("images/icon-tree-planting-white.svg", 70px, 70px, 130.5px, 59.5px);
+}
 .card-icon-grass-cutting {
     @include icon ("images/icon-grass-cutting.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card:hover .card-icon-grass-cutting {
+    @include icon ("images/icon-grass-cutting-white.svg", 70px, 70px, 130.5px, 59.5px);
 }
 .card-icon-garden-desing {
     @include icon ("images/icon-garden-desing.svg", 70px, 70px, 130.5px, 59.5px);
 }
+.card:hover .card-icon-garden-desing {
+    @include icon ("images/icon-garden-desing-white.svg", 70px, 70px, 130.5px, 59.5px);
+}
 .card-icon-plant-growing {
     @include icon ("images/icon-plant-growing.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card:hover .card-icon-plant-growing {
+    @include icon ("images/icon-plant-growing-white.svg", 70px, 70px, 130.5px, 59.5px);
 }
 .card-icon-flower-scating {
     @include icon ("images/icon-flower-scating.svg", 70px, 70px, 130.5px, 59.5px);
 }
+.card:hover .card-icon-flower-scating {
+    @include icon ("images/icon-flower-scating-white.svg", 70px, 70px, 130.5px, 59.5px);
+}
 .card-icon-branch-cutting {
     @include icon ("images/icon-branch-cutting.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card:hover .card-icon-branch-cutting {
+    @include icon ("images/icon-branch-cutting-white.svg", 70px, 70px, 130.5px, 59.5px);
 }
 .card-icon-pests-weeds-control {
     @include icon ("images/icon-pests-weeds-control.svg", 70px, 70px, 130.5px, 59.5px);
 }
+.card:hover .card-icon-pests-weeds-control {
+    @include icon ("images/icon-pests-weeds-control-white.svg", 70px, 70px, 130.5px, 59.5px);
+}
 .card-icon-watering-and-irrigation {
     @include icon ("images/icon-watering-and-irrigation.svg", 70px, 70px, 130.5px, 59.5px);
+}
+.card:hover .card-icon-watering-and-irrigation {
+    @include icon ("images/icon-watering-and-irrigation-white.svg", 70px, 70px, 130.5px, 59.5px);
 }
 .mob-main-second-cards {
     display: none;
@@ -301,6 +330,7 @@
         border-radius: 10px;
         // text-align: center;
         position: relative;
+        cursor: pointer;
     }
     .mob-card-text {
         // @include col- (68%, 0 0 68%);
@@ -314,32 +344,60 @@
         @include font-nunito (400, 14px, 22px);
         margin-top: 10px;
     }
+    .mob-card:hover {
+        background: #00730C;
+        color: white;
+    }
     .mob-card-icon-bg-plant {
         @include icon ("mob-images/mob-icon-bg-plant.svg", 92px, 112px, 0px, 10px);
     }
     .mob-card-icon-tree-planting {
         @include icon ("mob-images/mob-icon-tree-planting.svg", 50px, 50px, 20px, 33px);
     }
+    .mob-card:hover .mob-card-icon-tree-planting {
+        @include icon ("mob-images/mob-icon-tree-planting-white.svg", 50px, 50px, 20px, 33px);
+    }
     .mob-card-icon-grass-cutting {
         @include icon ("mob-images/mob-icon-grass-cutting.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card:hover .mob-card-icon-grass-cutting {
+        @include icon ("mob-images/mob-icon-grass-cutting-white.svg", 50px, 50px, 20px, 33px);
     }
     .mob-card-icon-garden-desing {
         @include icon ("mob-images/mob-icon-garden-desing.svg", 50px, 50px, 20px, 33px);
     }
+    .mob-card:hover .mob-card-icon-garden-desing {
+        @include icon ("mob-images/mob-icon-garden-desing-white.svg", 50px, 50px, 20px, 33px);
+    }
     .mob-card-icon-plant-growing {
         @include icon ("mob-images/mob-icon-plant-growing.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card:hover .mob-card-icon-plant-growing {
+        @include icon ("mob-images/mob-icon-plant-growing-white.svg", 50px, 50px, 20px, 33px);
     }
     .mob-card-icon-flower-scaping {
         @include icon ("mob-images/mob-icon-flower-scaping.svg", 50px, 50px, 20px, 33px);
     }
+    .mob-card:hover .mob-card-icon-flower-scaping {
+        @include icon ("mob-images/mob-icon-flower-scaping-white.svg", 50px, 50px, 20px, 33px);
+    }
     .mob-card-icon-branch-cutting {
         @include icon ("mob-images/mob-icon-branch-cutting.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card:hover .mob-card-icon-branch-cutting {
+        @include icon ("mob-images/mob-icon-branch-cutting-white.svg", 50px, 50px, 20px, 33px);
     }
     .mob-card-icon-pests-weeds-control {
         @include icon ("mob-images/mob-icon-pests-weeds-control.svg", 50px, 50px, 20px, 33px);
     }
+    .mob-card:hover .mob-card-icon-pests-weeds-control {
+        @include icon ("mob-images/mob-icon-pests-weeds-control-white.svg", 50px, 50px, 20px, 33px);
+    }
     .mob-card-icon-watering-and-irrigation {
         @include icon ("mob-images/mob-icon-watering-and-irrigation.svg", 50px, 50px, 20px, 33px);
+    }
+    .mob-card:hover  .mob-card-icon-watering-and-irrigation {
+        @include icon ("mob-images/mob-icon-watering-and-irrigation-white.svg", 50px, 50px, 20px, 33px);
     }
     .main-second-bg-img-and-content {
         display: none;
@@ -347,7 +405,7 @@
     .mob-main-second-bg-img-and-content {
         display: flex;
         flex-direction: column;
-        
+        align-items: center;
     }
     .mob-main-second-bg-images {
         
@@ -357,17 +415,17 @@
     .mob-main-second-bg_img-green {
         position: absolute;
         top: 50px;
-        left: 15px;
+        right: -14px;
     }
     .mob-main-second-bg_img-man-with-plant {
         position: absolute;
         top: 62px;
-        right: 27px;
+        right: -131px;
     }
     .mob-main-second-bg_img-plant {
         position: absolute;
         top: 350px;
-        right: 8px;
+        left: -67px;
     }
     .main-second-page-content-with-button {
         margin-top: 542px;

@@ -11,6 +11,11 @@
 }
 .row {
     display: flex;
+    justify-content: space-around;
+}
+.row-content {
+    display: flex;
+    position: relative;
 }
 body {
     margin: 0;
@@ -73,7 +78,9 @@ body {
         @include col- (75%, 0 0 75%)
     }
     .col-top-navbar-language {
-        @include col- (25%, 0 0 5%)
+        @include col- (25%, 0 0 5%);
+        margin-right: 25px
+    
     }
     .col-bottom-navdar-menu {
         display: none;
@@ -84,10 +91,11 @@ body {
     .col-bottom-navdar-btn {
         @include col- (26%, 0 0 26%);
         display: flex;
+        justify-content: flex-end;
     }
     .mob-col-bottom-navdar-btn {
         display: block;
-        @include col- (10%, 0 0 10%)
+        @include col- (18%, 0 0 18%)
     }
     .mob-btn {
         display: block;
