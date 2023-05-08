@@ -49,7 +49,7 @@
   position: relative;
   cursor: pointer;
 }
-.top-navbar .icon-down-arrow-white {
+.top-navbar .top-navbar-language .icon-down-arrow-white {
   background-image: url("images/icon-down-arrow-white.svg");
   position: absolute;
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@
   height: 7px;
   width: 12px;
   right: 3px;
-  top: 5px;
+  top: 7px;
 }
 .bottom-navdar .menu-dropdown:hover .icon-down-arrow-company {
   background-image: url(images/icon-down-arrow-green.svg);
@@ -109,7 +109,7 @@
   height: 7px;
   width: 12px;
   right: 7px;
-  top: 5px;
+  top: 7px;
 }
 .bottom-navdar .menu-dropdown:hover .icon-down-arrow-services {
   background-image: url(images/icon-down-arrow-green.svg);
@@ -124,7 +124,7 @@
   height: 7px;
   width: 12px;
   right: 12px;
-  top: 5px;
+  top: 7px;
 }
 .bottom-navdar .menu-dropdown:hover .icon-down-arrow-project {
   background-image: url(images/icon-down-arrow-green.svg);
@@ -256,8 +256,11 @@
     margin: 10px;
     cursor: pointer;
   }
+  .bottom-navdar .mob-btn-mini-call-us:hover {
+    background-color: white;
+    border: 1px solid #00730C;
+  }
   .bottom-navdar .mob-icon-phone {
-    display: block;
     background-image: url("mob-images/mob-icon-phone.svg");
     position: absolute;
     background-repeat: no-repeat;
@@ -266,8 +269,16 @@
     left: 10px;
     top: 7px;
   }
+  .bottom-navdar .mob-btn-mini-call-us:hover .mob-icon-phone {
+    background-image: url("mob-images/mob-icon-phone-green.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    left: 10px;
+    top: 7px;
+  }
   .bottom-navdar .mob-icon-menu {
-    display: block;
     background-image: url("mob-images/mob-icon-menu.svg");
     position: absolute;
     background-repeat: no-repeat;
@@ -583,17 +594,6 @@
   justify-content: space-around;
 }
 
-.card-green {
-  width: 330px;
-  height: 336px;
-  margin-top: 30px;
-  background-color: #00730C;
-  border: 1px solid #00730C;
-  border-radius: 10px;
-  text-align: center;
-  position: relative;
-}
-
 .card {
   width: 330px;
   height: 336px;
@@ -604,6 +604,7 @@
   border-radius: 10px;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 .card-icons {
@@ -651,6 +652,11 @@
   margin-right: 44px;
 }
 
+.card:hover {
+  background: #00730C;
+  color: white;
+}
+
 .card-icon-bg-plant {
   background-image: url("images/icon-bg-plant.svg");
   position: absolute;
@@ -671,8 +677,28 @@
   top: 59.5px;
 }
 
+.card:hover .card-icon-tree-planting {
+  background-image: url("images/icon-tree-planting-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
 .card-icon-grass-cutting {
   background-image: url("images/icon-grass-cutting.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card:hover .card-icon-grass-cutting {
+  background-image: url("images/icon-grass-cutting-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -691,8 +717,28 @@
   top: 59.5px;
 }
 
+.card:hover .card-icon-garden-desing {
+  background-image: url("images/icon-garden-desing-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
 .card-icon-plant-growing {
   background-image: url("images/icon-plant-growing.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card:hover .card-icon-plant-growing {
+  background-image: url("images/icon-plant-growing-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -711,8 +757,28 @@
   top: 59.5px;
 }
 
+.card:hover .card-icon-flower-scating {
+  background-image: url("images/icon-flower-scating-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
 .card-icon-branch-cutting {
   background-image: url("images/icon-branch-cutting.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card:hover .card-icon-branch-cutting {
+  background-image: url("images/icon-branch-cutting-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -731,8 +797,28 @@
   top: 59.5px;
 }
 
+.card:hover .card-icon-pests-weeds-control {
+  background-image: url("images/icon-pests-weeds-control-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
 .card-icon-watering-and-irrigation {
   background-image: url("images/icon-watering-and-irrigation.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 130.5px;
+  top: 59.5px;
+}
+
+.card:hover .card-icon-watering-and-irrigation {
+  background-image: url("images/icon-watering-and-irrigation-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -1012,6 +1098,7 @@
     border: 1px solid white;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
   }
   .mob-card-text {
     padding-left: 90px;
@@ -1029,6 +1116,10 @@
     font-size: 14px;
     line-height: 22px;
     margin-top: 10px;
+  }
+  .mob-card:hover {
+    background: #00730C;
+    color: white;
   }
   .mob-card-icon-bg-plant {
     background-image: url("mob-images/mob-icon-bg-plant.svg");
@@ -1048,8 +1139,26 @@
     left: 20px;
     top: 33px;
   }
+  .mob-card:hover .mob-card-icon-tree-planting {
+    background-image: url("mob-images/mob-icon-tree-planting-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
   .mob-card-icon-grass-cutting {
     background-image: url("mob-images/mob-icon-grass-cutting.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card:hover .mob-card-icon-grass-cutting {
+    background-image: url("mob-images/mob-icon-grass-cutting-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1066,8 +1175,26 @@
     left: 20px;
     top: 33px;
   }
+  .mob-card:hover .mob-card-icon-garden-desing {
+    background-image: url("mob-images/mob-icon-garden-desing-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
   .mob-card-icon-plant-growing {
     background-image: url("mob-images/mob-icon-plant-growing.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card:hover .mob-card-icon-plant-growing {
+    background-image: url("mob-images/mob-icon-plant-growing-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1084,8 +1211,26 @@
     left: 20px;
     top: 33px;
   }
+  .mob-card:hover .mob-card-icon-flower-scaping {
+    background-image: url("mob-images/mob-icon-flower-scaping-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
   .mob-card-icon-branch-cutting {
     background-image: url("mob-images/mob-icon-branch-cutting.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card:hover .mob-card-icon-branch-cutting {
+    background-image: url("mob-images/mob-icon-branch-cutting-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1102,8 +1247,26 @@
     left: 20px;
     top: 33px;
   }
+  .mob-card:hover .mob-card-icon-pests-weeds-control {
+    background-image: url("mob-images/mob-icon-pests-weeds-control-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
   .mob-card-icon-watering-and-irrigation {
     background-image: url("mob-images/mob-icon-watering-and-irrigation.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 33px;
+  }
+  .mob-card:hover .mob-card-icon-watering-and-irrigation {
+    background-image: url("mob-images/mob-icon-watering-and-irrigation-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1117,6 +1280,7 @@
   .mob-main-second-bg-img-and-content {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
   .mob-main-second-bg-images {
     position: relative;
@@ -1126,17 +1290,17 @@
   .mob-main-second-bg_img-green {
     position: absolute;
     top: 50px;
-    left: 15px;
+    right: -14px;
   }
   .mob-main-second-bg_img-man-with-plant {
     position: absolute;
     top: 62px;
-    right: 27px;
+    right: -131px;
   }
   .mob-main-second-bg_img-plant {
     position: absolute;
     top: 350px;
-    right: 8px;
+    left: -67px;
   }
   .main-second-page-content-with-button {
     margin-top: 542px;
@@ -1340,49 +1504,9 @@
     align-items: center;
   }
 }
-.card-third-page-green {
-  width: 330px;
-  height: 406px;
-  margin-top: 30px;
-  background-color: #00730C;
-  border: 1px solid #00730C;
-  border-radius: 10px;
-  position: relative;
-}
-
-.card-number-green {
-  position: absolute;
-  font-family: "Nunito", sans-serif;
-  font-weight: 800;
-  font-size: 78px;
-  line-height: 106.39px;
-  color: white;
-  right: 30px;
-  top: 50px;
-}
-
 .card-third-page-text {
   position: relative;
   top: 165px;
-}
-
-.card-third-page-heading-white {
-  font-family: "Nunito", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 32.74px;
-  color: white;
-  margin-bottom: 20px;
-  margin-left: 30px;
-}
-
-.card-third-page-paragraph-white {
-  font-family: "Nunito", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 28px;
-  color: white;
-  margin-left: 30px;
 }
 
 .card-third-page {
@@ -1393,6 +1517,7 @@
   box-shadow: 2px 11px 30px 0px rgba(51, 51, 51, 0.08);
   border: 1px solid white;
   position: relative;
+  cursor: pointer;
 }
 
 .card-number {
@@ -1423,7 +1548,23 @@
   margin-left: 30px;
 }
 
-.card-icon-bg-plant-2-white {
+.card-third-page:hover {
+  background: #00730C;
+  color: white;
+}
+
+.card-icon-bg-plant-2 {
+  background-image: url("images/icon-bg-plant-2.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 161.8px;
+  width: 95.1px;
+  left: 190.85px;
+  top: 112.98px;
+  opacity: 10%;
+}
+
+.card-third-page:hover .card-icon-bg-plant-2 {
   background-image: url("images/icon-bg-plant-2-white.svg");
   position: absolute;
   background-repeat: no-repeat;
@@ -1444,19 +1585,28 @@
   top: 55px;
 }
 
-.card-icon-bg-plant-2 {
-  background-image: url("images/icon-bg-plant-2.svg");
+.card-third-page:hover .card-icon-consultation {
+  background-image: url("images/icon-consultation-white.svg");
   position: absolute;
   background-repeat: no-repeat;
-  height: 161.8px;
-  width: 95.1px;
-  left: 190.85px;
-  top: 112.98px;
-  opacity: 10%;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
 }
 
 .card-icon-design-and-work {
   background-image: url("images/icon-design-and-work.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.card-third-page:hover .card-icon-design-and-work {
+  background-image: url("images/icon-design-and-work-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -1475,8 +1625,28 @@
   top: 55px;
 }
 
+.card-third-page:hover .card-icon-maintenance {
+  background-image: url("images/icon-maintenance-white.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
 .card-icon-complete {
   background-image: url("images/icon-complete.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  height: 70px;
+  width: 70px;
+  left: 29px;
+  top: 55px;
+}
+
+.card-third-page:hover .card-icon-complete {
+  background-image: url("images/icon-complete-white.svg");
   position: absolute;
   background-repeat: no-repeat;
   height: 70px;
@@ -1529,6 +1699,7 @@
     border: 1px solid white;
     border-radius: 10px;
     position: relative;
+    cursor: pointer;
   }
   .mob-card-number {
     position: absolute;
@@ -1544,8 +1715,21 @@
     margin-top: 90px;
     margin-left: 20px;
   }
+  .mob-card-third-page:hover {
+    background: #00730C;
+    color: white;
+  }
   .mob-card-icon-bg-plant-2 {
     background-image: url("mob-images/mob-icon-bg-plant-2.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 111.89px;
+    width: 65.77px;
+    left: 237.83px;
+    top: 47.97px;
+  }
+  .mob-card-third-page:hover .mob-card-icon-bg-plant-2 {
+    background-image: url("mob-images/mob-icon-bg-plant-2-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 111.89px;
@@ -1562,8 +1746,26 @@
     left: 20px;
     top: 20px;
   }
+  .mob-card-third-page:hover .mob-card-icon-consultation {
+    background-image: url("mob-images/mob-icon-consultation-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
   .mob-card-icon-design-and-work {
     background-image: url("mob-images/mob-icon-design-and-work.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-card-third-page:hover .mob-card-icon-design-and-work {
+    background-image: url("mob-images/mob-icon-design-and-work-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1580,8 +1782,26 @@
     left: 20px;
     top: 20px;
   }
+  .mob-card-third-page:hover .mob-card-icon-maintenance {
+    background-image: url("mob-images/mob-icon-maintenance-white.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
   .mob-card-icon-complete {
     background-image: url("mob-images/mob-icon-complete.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 50px;
+    width: 50px;
+    left: 20px;
+    top: 20px;
+  }
+  .mob-card-third-page:hover .mob-card-icon-complete {
+    background-image: url("mob-images/mob-icon-complete-white.svg");
     position: absolute;
     background-repeat: no-repeat;
     height: 50px;
@@ -1593,11 +1813,13 @@
     display: flex;
     justify-content: center;
     margin-top: 55px;
+  }
+  .mob-main-third-page-img {
     position: relative;
   }
   .main-third-page-paragraph-and-btn {
     position: absolute;
-    left: 56px;
+    left: 41px;
     top: 50px;
   }
   .main-third-page-paragraph-on-the-img {
@@ -1612,8 +1834,39 @@
   }
   .main-third-page-btn {
     position: absolute;
-    right: 114.5px;
-    top: 134px;
+    right: 67.5px;
+    top: 84px;
+  }
+  .mob-btn-call-us {
+    background-color: #00730C;
+    width: 137px;
+    height: 40px;
+    border: 0;
+    padding: 10px 0px 10px 20px;
+    position: relative;
+  }
+  .mob-btn-call-us:hover {
+    background-color: white;
+    color: #00730C;
+    border: 1px solid #00730C;
+  }
+  .mob-icon-phone {
+    background-image: url("mob-images/mob-icon-phone.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    left: 25px;
+    top: 10px;
+  }
+  .mob-btn-call-us:hover .mob-icon-phone {
+    background-image: url("mob-images/mob-icon-phone-green.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 20px;
+    left: 25px;
+    top: 10px;
   }
 }
 .conteiner {
@@ -1624,6 +1877,12 @@
 
 .row {
   display: flex;
+  justify-content: space-around;
+}
+
+.row-content {
+  display: flex;
+  position: relative;
 }
 
 body {
@@ -1710,6 +1969,7 @@ body {
   .col-top-navbar-language {
     max-width: 25%;
     flex: 0 0 5%;
+    margin-right: 25px;
   }
   .col-bottom-navdar-menu {
     display: none;
@@ -1722,11 +1982,12 @@ body {
     max-width: 26%;
     flex: 0 0 26%;
     display: flex;
+    justify-content: flex-end;
   }
   .mob-col-bottom-navdar-btn {
     display: block;
-    max-width: 10%;
-    flex: 0 0 10%;
+    max-width: 18%;
+    flex: 0 0 18%;
   }
   .mob-btn {
     display: block;
@@ -1734,6 +1995,10 @@ body {
     border: 0;
     border-radius: 5px;
     cursor: pointer;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
   }
   .col-main-content {
     max-width: 100%;
