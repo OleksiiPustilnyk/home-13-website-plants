@@ -27,11 +27,15 @@
         position: relative;
         cursor: pointer;
     }
-    .top-navbar-language
+    .top-navbar-language:hover {
+        color: #00730C
+    }
     .icon-down-arrow-white {
         @include icon-arrow ("images/icon-down-arrow-white.svg", 7px, 12px, 7px, 9px);
     }
-    
+    .top-navbar-language:hover .icon-down-arrow-white {
+        @include icon-arrow ("images/icon-down-arrow-green.svg", 7px, 12px, 7px, 9px);
+    }
 }
 
 .bottom-navdar {
@@ -141,6 +145,10 @@
             .mob-icon-down-arrow-white {
                 display: block;
                 @include icon-arrow ("mob-images/mob-icon-down-arrow-white.svg", 4px, 7px, -10px, 11px);
+            }
+            .top-navbar-language:hover .mob-icon-down-arrow-white {
+                display: block;
+                @include icon-arrow ("mob-images/mob-icon-down-arrow-green.svg", 4px, 7px, -10px, 11px);
             }
         }
 
