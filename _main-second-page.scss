@@ -1,19 +1,19 @@
-.main-second-heading-and-paragraph {
+.main-small-center-heading-and-paragraph {
     display: flex; 
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
     margin-bottom: 20px;
 }
-.main-second-heading {
+.main-small-center-heading {
     @include font-nunito (800, 45px, 61.38px);
     text-align: center;
     margin-bottom: 30px;
 }
-.main-second-heading-green {
+.main-small-heading-green {
     color:#00730C;
 }
-.main-second-paragraph {
+.main-small-center-paragraph {
     @include col- (82%, 0 0 82%);
     color: rgba(103, 103, 103, 1);
     @include font-nunito (400, 18px, 30px);
@@ -301,15 +301,16 @@
     display: none;
 }
 @media (max-width:1200px) {
-    .main-second-heading-and-paragraph {
+    .main-small-center-heading-and-paragraph {
         margin-top: 50px;
         margin-bottom: 30px
     }
-    .main-second-heading {
+    .main-small-center-heading {
         @include font-nunito (700, 28px, 38.19px);
         margin-bottom: 15px;
     }
-    .main-second-paragraph {
+    .main-small-center-paragraph {
+        margin-bottom: 15px;
         @include col- (92%, 0 0 92%);
         @include font-nunito (400, 14px, 22px);
     }
