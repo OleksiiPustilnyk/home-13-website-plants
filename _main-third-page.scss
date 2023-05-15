@@ -15,6 +15,12 @@
 //     right: 30px;
 //     top: 50px;
 // }
+.main-third-content {
+    display: flex;
+    margin-left: 15px;
+    margin-left: 15px;
+    flex-direction: column;
+}
 .card-third-page-text {
     position: relative;
     top: 165px
@@ -134,6 +140,34 @@
 .main-card-staff {
     position: relative;
 }
+.card-img-staff-1 {
+    position: relative;
+    display: block;
+    width: 330px;
+    height: 408px;
+    background: url("images/img-staff-1.png");
+}
+.card-img-staff-2 {
+    position: relative;
+    display: block;
+    width: 330px;
+    height: 408px;
+    background: url("images/img-staff-2.png");
+}
+.card-img-staff-3 {
+    position: relative;
+    display: block;
+    width: 330px;
+    height: 408px;
+    background: url("images/img-staff-3.png");
+}
+.card-img-staff-4 {
+    position: relative;
+    display: block;
+    width: 330px;
+    height: 408px;
+    background: url("images/img-staff-4.png");
+}
 .card-staff-content {
     position: absolute;
     width: 330px;
@@ -144,53 +178,59 @@
     text-align: center;
     cursor: pointer;
 }
+.card-staff-content:hover{
+    display: block;
+    width: 330px;
+    height: 408px;
+    border-radius: 10px;
+    background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
+    cursor: default;
+}
+.card-hover-staff-networks {
+    display: none;
+    position: absolute;
+}
+.card-staff-content:hover .card-hover-staff-networks {
+    display: block;
+}
+.icon-google {
+    @include icon ("images/icon-google.svg", 30px, 30px, 40px, 231px);
+}
+.icon-facebook {
+    @include icon ("images/icon-facebook.svg", 30px, 30px, 95px, 231px);
+}
+.icon-twitter {
+    @include icon ("images/icon-twitter.svg", 30px, 30px, 150px, 231px);
+}
+.icon-pinterest {
+    @include icon ("images/icon-pinterest.svg", 30px, 30px, 205px, 231px);
+}
+.icon-linkedin {
+    @include icon ("images/icon-linkedin.svg", 30px, 30px, 260px, 231px);
+}
 .card-staff-name {
     margin-top: 13px;
     @include font-nunito (700, 24px, 32.74px);
     color: white;
+}
+.card-staff-content:hover .card-staff-name{
+    margin-top: 147px;
 }
 .card-staff-post {
     @include font-nunito (400, 18px, 30px);
     color: white;
 }
 
-// .card-staff-drop {
-//     position: relative;
-//     display: inline;
-//     z-index: 10;
-// }
-// .card-staff-dropUp {
-//     display: none;
-//     position: absolute;
-//     background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
-//     // left: -1px;
-//     width: 100%;
-// }
-// .card-staff-dropUp-content {
-//     background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
-//     display: block;
-// }
-// //   .dropdown-content a:hover {
-// //     background-color: white;
-// //     color: #2c71b8;
-// //   }
-// .card-staff-drop:hover .card-staff-dropUp-content {
-//     display: block;
-// }
-//   .card-staff-drop:hover .card-staff-content {
-//     background: linear-gradient(6.68deg, #00730C 4.95%, rgba(251, 246, 238, 0) 264.79%);
-//     color: white;
-//   }
-//   .card-staff-drop:after {
-//     position: absolute;
-//   }
+.mob-main-card-our-trained-staff {
+    display: none;
+}
+
 .main-third-page-what-clients-saying {
     height: 585px;
     background: #E6F6EA;
     box-shadow: inset 77.4px -77.4px 77.4px rgba(175, 187, 178, 0.099), inset -77.4px 77.4px 77.4px rgba(255, 255, 255, 0.099);
     backdrop-filter: blur(36.378px);
 }
-
 .main-small-left-heading-and-paragraph {
     display: flex; 
     // align-items: center;
@@ -296,17 +336,37 @@
     // padding: 10px 13px;
     background-position: center;
 }
+.slick-prev:focus {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #00730C;
+    border-radius: 5px;
+    // padding: 10px 13px;
+    background-position: center;
+    @include icon ("images/icon-slider-arrow-prev-green.svg", 50px, 50px, 1265px, -76px);
+}
+.slick-next:focus {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #00730C;
+    border-radius: 5px;
+    // padding: 10px 13px;
+    background-position: center;
+    @include icon-arrow ("images/icon-slider-arrow-next-green.svg", 50px, 50px, 15px, -76px);
+}
 .slick-prev {
-    @include icon ("images/icon-slider-arrow-prev-white.svg", 50px, 50px, 1270px, -76px);
+    @include icon ("images/icon-slider-arrow-prev-white.svg", 50px, 50px, 1265px, -76px);
 }
 .slick-next {
-    @include icon ("images/icon-slider-arrow-next-white.svg", 50px, 50px, 1360px, -76px);
+    @include icon-arrow ("images/icon-slider-arrow-next-white.svg", 50px, 50px, 15px, -76px);
 }
 .slick-prev:hover {
-    @include icon ("images/icon-slider-arrow-prev-green.svg", 50px, 50px, 1270px, -76px);
+    @include icon ("images/icon-slider-arrow-prev-green.svg", 50px, 50px, 1265px, -76px);
 }
 .slick-next:hover {
-    @include icon ("images/icon-slider-arrow-next-green.svg", 50px, 50px, 1360px, -76px);
+    @include icon-arrow ("images/icon-slider-arrow-next-green.svg", 50px, 50px, 15px, -76px);
 }
 
 .slick-next:after {
@@ -446,4 +506,138 @@
         // display: block;
         @include icon ("mob-images/mob-icon-phone-green.svg", 20px, 20px, 25px, 10px);
     }
+    .main-third-content {
+        align-items: center;
+    }
+    // .main-small-center-heading-and-paragraph {
+    //     max-width: 26%;
+    // }
+    .main-our-trained-staff-and-btn {
+        align-items: center;
+        flex-direction: column;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .main-small-left-heading-and-paragraph {
+        align-items: center;
+        margin-top: 50px;
+    }
+    .main-small-left-heading-and-paragraph-width {
+        max-width: 100%;
+        flex: 100%;
+    }
+   .main-small-left-heading {
+        margin-bottom: 15px;
+        @include font-nunito (700, 28px, 38.19px)
+   }
+   .main-small-left-paragraph {
+        text-align: center;
+        max-width: 100%;
+        @include font-nunito (400, 14px, 22px)
+   }
+   .main-our-trained-staff-btn {
+        display: none;
+   }
+   .main-card-our-trained-staff {
+        display: none;
+   }
+   .mob-main-card-our-trained-staff {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 40px;
+        margin-bottom: 86px;
+   }
+   .card-img-staff-1 {
+        width: 345px;
+        height: 343px;
+        border-radius: 5px;
+        background: url("mob-images/mob-img-staff.png");
+   }
+   .card-staff-content {
+        width: 345px;
+        height: 62px;
+        border-radius: 5px;
+   }
+   .card-staff-name {
+        margin-top: 7px;
+        @include font-nunito (700, 18px, 24.55px)
+   }
+   .card-staff-post {
+        @include font-nunito (400, 14px, 22px)
+   }
+   .card-staff-content:hover {
+        width: 345px;
+        height: 343px;
+        border-radius: 5px;
+   }
+   .icon-google {
+        @include icon ("images/icon-google.svg", 30px, 30px, 47.5px, 231px);
+   }
+   .icon-facebook {
+        @include icon ("images/icon-facebook.svg", 30px, 30px, 102.5px, 231px);
+   }
+   .icon-twitter {
+        @include icon ("images/icon-twitter.svg", 30px, 30px, 157.5px, 231px);
+   }
+   .icon-pinterest {
+        @include icon ("images/icon-pinterest.svg", 30px, 30px, 212.5px, 231px);
+   }
+   .icon-linkedin {
+        @include icon ("images/icon-linkedin.svg", 30px, 30px, 267.5px, 231px);
+   }
+   .slider-comments {
+        display: none;
+   }
+   .row-content {
+        justify-content: center;
+   }
+   .main-small-left-heading-and-paragraph-width {
+        @include col- (100%, 0 0 100%)
+   }
+   .main-small-left-heading-and-paragraph {
+        margin-left: 15px;
+        margin-right: 15px;
+   }
+   .comment-form {
+        width: 345px;
+        height: 431px;
+   }
+
+   .bg-icon-quotes {
+        @include icon ("mob-images/mob-icon-quotes.svg", 23.15px, 29.76px, 21px, 236.32px);
+        opacity: 10%;
+   }
+   .comment-img-client {
+        top: 21px;
+        left: 20px;
+   }
+   .comment-img-bg {
+        top: 75.78px;
+        left: 20px;
+   }
+   .comment-img {
+        max-width: 0;
+   }
+   .comment-text {
+        @include col- (100%, 0 0 100%)
+   }
+   .comment-paragraph {
+        margin-top: 246.76px;
+        margin-left: 15px;
+        margin-right: 15px;
+        @include font-nunito (400, 14px, 22px);
+   }
+   .comment-name-position-stars {
+        margin-top: 15px;
+        margin-left: 20px;
+   }
+   .comment-name {
+        @include font-nunito (700, 16px, 21.82px);
+   }
+   .comment-position {
+        @include font-nunito (400, 12px, 16.37px);
+   }
+   .icon-stars {
+        @include icon ("images/icon-stars.svg", 25px, 124px, 185.94px, 5px);
+   }
 }
