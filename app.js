@@ -7,3 +7,7 @@ $(".slider-comments").slick({
   slidesToShow: 2,
   slidesToScroll: 2,
 });
+$(".mob-slider-comments").slick({
+  dots: false,
+  arrows: false,
+});
